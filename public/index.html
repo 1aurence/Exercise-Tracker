@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <title>Exercise Tracker</title>
 </head>
 
-<body>
+<body class="container">
     <h1>Exercise Tracker</h1>
     <div class="forms">
         <form class="" method="post" action="/user">
@@ -17,7 +19,8 @@
             <p class="endpoint">POST /api/exercise/new-user
             </p>
             <input type="text" name="username" placeholder="username" />
-            <button>Submit</button>
+            <br />
+            <button class="btn btn-primary">Submit</button>
         </form>
         <form class="" method="post" action="/exercise">
             <h3>Add exercises</h3>
@@ -26,9 +29,17 @@
             <input type="text"   name="description" placeholder="description">
             <input type="number" name="duration"    placeholder="duration (mins)">
             <input type="number" name="date"        placeholder="date (yyyy-mm-dd)">
-            <button>Submit</button>
+            <button class="btn btn-primary">Submit</button>
         </form>
+    </div>
+    <div class="form-info">
+        <p><strong> GET users's exercise log</strong>: 
+            <span class="endpoint">GET /api/exercise/log?{userId}[&from][&to][&limit]</span></p>
+        <p><strong>{ }</strong> = required, <strong>[ ]</strong> = optional</p>
     </div>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>

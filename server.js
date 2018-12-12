@@ -23,6 +23,5 @@ console.log('Connected to DB')
 app.use(function(req, res, err, next) {
     if(err) {
         console.log('err',err.message)
-        res.send(err)
     }
 })

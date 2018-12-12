@@ -1,0 +1,13 @@
+form {
+    background: #87D37C;
+    width:400px;
+    margin-left:2%;
+    padding: 1%
+}
+.forms {
+    display: flex;
+
+}
+.endpoint {
+    background: peachpuff;
+}

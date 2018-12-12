@@ -1,13 +1,27 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.container {
+    width: 500px;
+}
+
 form {
     background: #87D37C;
-    width:400px;
-    margin-left:2%;
-    padding: 1%
+    width: 400px;
+    margin-left: 2%;
+    padding: 1%;
+    margin-top: 5%;
 }
+
 .forms {
     display: flex;
     margin-bottom: 2%;
 }
+
 .endpoint {
-    background: peachpuff;
+    background: #FFFEC4;
 }

@@ -26,6 +26,7 @@ router.post('/', async (req, res, next) => {
             userId
         })
         .populate('User')
+        .select('-userId')
         .exec((err, doc) => {
             res.send(doc)
         })
